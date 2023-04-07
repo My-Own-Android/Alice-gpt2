@@ -34,14 +34,19 @@ jobs:
     - name: Run cat
       run: |
         cat export/gpt_2_gen_texts.txt
-      
-    - name: Commit files
-      run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git commit -a -m "Внеплановое обучение"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+        
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v9
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        author_name: Github
+        author_email: github@example.com
+        message: 'Результаты обучения'
+        add: 'export/*'
+        
+    - name: Commit checkpoint
+      uses: EndBug/add-and-commit@v9
+      with:
+        author_name: Github
+        author_email: github@example.com
+        message: 'Плановое обучение'
+        add: 'checkpoint/*'
