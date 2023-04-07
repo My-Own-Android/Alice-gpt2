@@ -19,7 +19,7 @@ _start = time.time()
 gpt2.finetune(sess,
               file_name,
               model_name=model_name,
-              steps=100)   # steps is max number of training steps
+              steps=10)   # steps is max number of training steps
 print(f"gpt2.finetune заняло: {time.time() - _start}")
 
 file_count = sum(len(files) for _, _, files in os.walk('export/'))
