@@ -9,7 +9,7 @@ if not os.path.isdir(os.path.join("models", model_name)):
 
 
 file_name = "alice_and_aren.txt"
-if not os.path.isfile(file_name):
+#if not os.path.isfile(file_name):
 	#url = "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt"
 	#data = requests.get(url)
 
