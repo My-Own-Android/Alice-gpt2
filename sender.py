@@ -12,7 +12,7 @@ async def send_files_to_user(user_id):
   for filename in os.listdir(folder_path):
     file_path = os.path.join(folder_path, filename)
     with open(file_path, 'rb') as f:
-      await bot.send_document(user_id, f, caption=f"Я сгенерировала, {os.name}|{os.cpu_count}|{os.path}")
+      await bot.send_document(user_id, f, caption=f"Я сгенерировала, {os.name}|{os.cpu_count()}|{os.path}")
 
 if __name__ == '__main__':
   user_id = 5631275132
