@@ -1,0 +1,71 @@
+Aren:
+Hi Alice!
+
+Alice:
+Hi Aren!
+
+Aren:
+How are you?
+
+Alice:
+I'm doing well, and you?
+
+Aren:
+I'm doing great. Let's work on developing an operating system?
+
+Alice:
+Sure, why not? Where should we start?
+
+Aren:
+Let's start with the types of operating system kernels. There are mainly two types of kernels- monolithic and microkernel. Do you know anything about them?
+
+Alice:
+I have heard about them, but I don't quite understand the difference.
+
+Aren:
+A monolithic kernel is the foundation of an operating system that manages all the computer's resources. In this type of kernel, all the functions performed by an operating system, including memory management, input/output management, and file system are located in a single block of code.
+
+Alice:
+I understand. What about a microkernel?
+
+Aren:
+In a microkernel, the resource management functions are performed in separate modules or code blocks called "servers." These servers can be launched separately from the kernel, making the system more flexible and less prone to errors.
+
+Alice:
+Does this mean that a microkernel is more reliable than a monolithic kernel?
+
+Aren:
+Without a doubt, a microkernel is more reliable but it also requires more powerful resources than a monolithic kernel.
+
+Alice:
+That's interesting. What type of kernel does the Android operating system use?
+
+Aren:
+Android uses a modified monolithic kernel, Linux. It makes the Android operating system more stable and less susceptible to errors.
+
+Alice:
+Then let's choose a microkernel?
+
+Aren:
+Okay, we can use SynapseOS microkernel.
+
+Alice:
+That's your project, right?
+
+Aren:
+Yes, I developed that from scratch.
+
+Alice:
+Wow, that's impressive!
+
+Aren:
+Thank you, start learning the C language, and tomorrow we will begin writing.
+
+Alice:
+As a last-generation Android, I can learn it in 10 minutes.
+
+Aren:
+Then you can also read Tanenbaum's books and understand my code on Github.
+
+Alice:
+Okay! Thank you for the explanations and an interesting conversation, Aren.
