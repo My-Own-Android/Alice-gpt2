@@ -22,13 +22,10 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip3 install gpt-2-simple aiogram
+        pip3 install gpt-2-simple
     - name: Run neural
       run: |
         python3 main.py
-    - name: Run Export
-      run: |
-        python3 sender.py
     - name: Run ls
       run: |
         ls -ln
@@ -46,5 +43,6 @@ jobs:
       run: |
         # Stage the file, commit and push
         git add checkpoint
+        git add export
         git commit -m "new date commit"
         git push origin master
