@@ -23,3 +23,4 @@ gpt2.finetune(sess,
               steps=10)   # steps is max number of training steps
 
 gpt2.generate_to_file(sess, destination_path='export/gpt_2_gen_texts.txt')
+gpt2.generate(sess)
