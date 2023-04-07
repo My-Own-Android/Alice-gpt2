@@ -8,10 +8,6 @@ on:
     branches: [ "*" ]
   pull_request:
     branches: [ "*" ]
-
-permissions:
-  contents: read
-
 jobs:
   build:
 
@@ -39,3 +35,16 @@ jobs:
     - name: Run cat
       run: |
         cat export/gpt_2_gen_texts.txt
+
+    - name: setup git config
+      run: |
+        # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
+        git config user.name "GitHub Actions Bot"
+        git config user.email "<>"
+
+    - name: commit
+      run: |
+        # Stage the file, commit and push
+        git add checkpoint
+        git commit -m "new date commit"
+        git push origin master
