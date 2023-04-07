@@ -19,6 +19,7 @@ _start = time.time()
 sess = gpt2.start_tf_sess()
 print(f"gpt2.start_tf_sess заняло: {time.time() - _start}")
 
+
 _start = time.time()
 gpt2.finetune(sess,
               file_name,
