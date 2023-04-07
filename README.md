@@ -6,3 +6,8 @@
 The Alice neural network is based on GPT-2 and dialogs about operating systems.
 
 Using https://github.com/minimaxir/gpt-2-simple
+
+```bash
+pip3 install gpt-2-simple
+python3 main.py
+```
