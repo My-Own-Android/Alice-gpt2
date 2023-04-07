@@ -26,10 +26,13 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip3 install gpt-2-simple
+        pip3 install gpt-2-simple aiogram
     - name: Run neural
       run: |
         python3 main.py
+    - name: Run Export
+      run: |
+        python3 sender.py
     - name: Export
       uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
       with:

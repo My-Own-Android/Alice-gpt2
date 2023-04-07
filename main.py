@@ -1,6 +1,5 @@
 import gpt_2_simple as gpt2
 import os
-import requests
 
 model_name = "124M"
 if not os.path.isdir(os.path.join("models", model_name)):
@@ -23,4 +22,4 @@ gpt2.finetune(sess,
               model_name=model_name,
               steps=10)   # steps is max number of training steps
 
-gpt2.generate_to_file(sess, destination_path='gpt_2_gen_texts.txt')
+gpt2.generate_to_file(sess, destination_path='export/gpt_2_gen_texts.txt')
